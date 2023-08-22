@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services</title>
+  <!-- Add the Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+    /* Style the WhatsApp link as a button */
+.whatsapp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #25D366; /* WhatsApp green */
+      color: #fff;
+      border: none;
+      border-radius: 112px;
+      text-decoration: none;
+      font-weight: bold;
+      position: fixed;
+     bottom: 20px;
+left: 20px;
+    }
+
+    /* Add some margin for spacing */
+    .whatsapp-button + .whatsapp-button {
+      margin-left: 10px;
+    }
+</style>
+<body>
+
+<!-- Include the navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark color">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./Images/logo.jpeg" width="100" height="60" class="d-inline-block align-top" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<include src="navbar.html"></include>
+
+<!-- Your section content goes here -->
+<section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p>This is the Services section. Describe the services your company offers.</p>
+    </div>
+  </section>
+
+
+  <!-- Create a styled WhatsApp link -->
+<a class="whatsapp-button" href="https://wa.me/1234567890?text=Hello%from%20my%20website!" target="_blank">
+    <img src="./Images/whatsapp-icon.png" alt="WhatsApp Icon" width="40" height="40" style="vertical-align: middle;">
+    Chat Now
+</a>
+
+
+<!-- Add the Bootstrap JS and jQuery links -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</script>
+<script type='text/javascript'>
+    (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'ArNab3QtCJk96n8Mc_c', {});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Meeting</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .background-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .calander {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    .calendly-inline-widget {
+        min-width: 320px;
+        height: 700px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+        .calander {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+</style>
+
+<body>
+
+<div class="container">
+    <img class="background-image" src="./Images/meeting.jpg" alt="Meeting Image">
+    <div class="calander">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/manojmadduri/phone-meeting"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/manojmadduri/zoom-meeting"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/manojmadduri/30min?hide_gdpr_banner=1"></div>
+    </div>
+</div>
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/manojmadduri/30min', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
